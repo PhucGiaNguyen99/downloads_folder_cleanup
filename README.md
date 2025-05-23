@@ -1,5 +1,6 @@
 # downloads_folder_cleanup
 This project contains Python scripts designed to help you manage and clean up your local file system — especially the **Downloads folder**, where duplicates, large files, and old clutter often accumulate.
+<<<<<<< HEAD
 
 These scripts are practical tools that:
 - Free up storage
@@ -43,3 +44,4 @@ No external dependencies required.
 1. Clone the repo:
    ```bash
    git clone https://github.com/YOUR_USERNAME/downloads-folder-cleanup.git
+
