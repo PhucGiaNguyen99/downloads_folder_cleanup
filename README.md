@@ -39,9 +39,20 @@ These scripts use only **Python standard libraries** such as:
 
 No external dependencies required.
 
+## Scripts
+### `count_large_files.py`
+
+Scans a folder and lists all files larger than a specified size (in MB).
+
+#### Usage:
+```bash
+python count_large_files.py <size_in_mb> [--path <folder_path>]
+```
+
 ## How to Use
 
 1. Clone the repo:
    ```bash
    git clone https://github.com/YOUR_USERNAME/downloads-folder-cleanup.git
+
 

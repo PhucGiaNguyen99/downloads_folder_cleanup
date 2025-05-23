@@ -1,16 +1,20 @@
+import argparse
 import os
 
-# Set the Download folder path
-folder_path = r"C:\Users\saota\Downloads"
+# Setup command-line arguments
+parser = argparse.ArgumentParser(description="Count files larger than a given size in MB.")
+parser.add_argument("size", type=int, help="Size threshold in MB")
+parser.add_argument("--path", type=str, default=r"C:\Users\saota\Downloads", help="Folder to scan (default: Downloads)")
+args = parser.parse_args()
 
 # Size threshold in megabytes
-size_threshold_mb = 50
-size_threshold_bytes = size_threshold_mb * 1024 * 1024
+size_threshold_bytes = args.size * 1024 * 1024
+folder_path = args.path
 
 # Counter
 count = 0
 
-print(f"Files in '{folder_path}' larger than {size_threshold_mb} MB:\n")
+print(f"Files in '{folder_path}' larger than {args.size} MB:\n")
 
 # Walk through the folder and subfolders
 for root, dirs, files in os.walk(folder_path):
