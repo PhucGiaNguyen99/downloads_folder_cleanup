@@ -49,6 +49,15 @@ Scans a folder and lists all files larger than a specified size (in MB).
 python count_large_files.py <size_in_mb> [--path <folder_path>]
 ```
 
+### `organize_by_extension.py`
+
+Organizes files in the target folder by their file extension (e.g., .pdf, .jpg, .zip) into separate subfolders.
+
+#### Usage:
+```bash
+python organize_by_extension.py [--path <folder_path>]
+```
+
 ## How to Use
 
 1. Clone the repo:
